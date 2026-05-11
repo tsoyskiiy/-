@@ -1,0 +1,108 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.panel {
+  background: #fff;
+  border: 1px solid #999;
+  width: 420px;
+}
+.panel.wide { width: 500px; }
+.panel-title {
+  background: #d4d4d4;
+  border-bottom: 1px solid #999;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.panel-body { padding: 16px; }
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+.form-row label { width: 120px; flex-shrink: 0; }
+.form-row input[type="text"],
+.form-row input[type="password"],
+.form-row textarea {
+  flex: 1;
+  border: 1px solid #999;
+  padding: 3px 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.form-row textarea { height: 75px; resize: none; }
+
+.uid-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  gap: 5px;
+}
+.uid-row label { width: 120px; flex-shrink: 0; }
+.uid-row input { flex: 1; border: 1px solid #999; padding: 3px 5px; font-size: 13px; }
+
+.btn {
+  background: #d4d4d4;
+  border: 1px solid #888;
+  padding: 3px 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn:hover { background: #bbb; }
+.btn-full {
+  width: 100%;
+  padding: 5px;
+  background: #d4d4d4;
+  border: 1px solid #888;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn-full:hover { background: #bbb; }
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 12px;
+}
+.btn-row-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.msg { font-size: 12px; margin-top: 5px; }
+.error { color: red; }
+.success { color: green; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+th {
+  border-bottom: 1px solid #999;
+  text-align: left;
+  padding: 3px 4px;
+  font-size: 12px;
+  background: #f0f0f0;
+}
+td { border-bottom: 1px solid #ddd; padding: 4px; font-size: 12px; }
+a.post-link { color: #00c; text-decoration: underline; }
+a.post-link:hover { color: #009; }
+
+.view-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+.view-body { min-height: 60px; line-height: 1.6; white-space: pre-wrap; }
+
+.signup-link { text-align: right; margin-top: 8px; font-size: 12px; color: #555; }
+.signup-link a { color: #00c; }
